@@ -1,12 +1,18 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html>
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Hajick!</title>
+    <title>Hajick!</title>
   </head>
   <body style="text-align: center">
-    <canvas id="unity-canvas" width=960 height=600 style="width: 960px; height: 600px; background: #FFFFFF"></canvas>
+    <canvas id="unity-canvas" style="background: #FFFFFF"></canvas>
+    <style>
+      html, body, #unity-canvas{
+        width: 100%;
+        height: 100%;
+      }
+    </style>
     <script src="Build/web.loader.js"></script>
     <script>
       createUnityInstance(document.querySelector("#unity-canvas"), {
